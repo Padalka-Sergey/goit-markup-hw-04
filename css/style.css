@@ -125,7 +125,7 @@ img {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    /* outline: 2px solid tomato; */
+    outline: 2px solid tomato;
     
 }
 
@@ -422,11 +422,14 @@ img {
     --cards-gap: 10px;
     margin-left: calc(-1 *var(--cards-gap));
     margin-top: calc(-1 *var(--cards-gap));
-    margin-bottom: 30px;
 }
 
 .icons-common {
-    padding: 12px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
     --qty-cards: 4;
     flex-basis: calc(100%/var(--qty-cards) - var(--cards-gap));
     margin-left: var(--cards-gap);
@@ -447,9 +450,6 @@ img {
     display: block;
     width: 20px;
     height: 20px;
-    margin-left: auto;
-    margin-right: auto;
-
 }
 /* END */
 /* SOCIAL LINKS COMMON*/
@@ -459,11 +459,13 @@ img {
 .team .social {
     padding-left: 32px;
     padding-right: 32px;
+    margin-bottom: 30px;
 }
 
 .team .icons {
     fill: var(--social-links);
 }
+
 
 
 /* CLIENTS */
@@ -476,7 +478,6 @@ img {
 }
 
 .clients-item {
-    width: 170px;
     --qty-cards: 6;
     flex-basis: calc(100%/var(--qty-cards) - var(--cards-gap));
     margin-right: var(--cards-gap);
@@ -484,12 +485,18 @@ img {
 }
 
 .clients .box {
+    height: 92px;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    /* Добавил сверху */
     border: 1px solid var(--social-links);
     border-radius: 4px;
     color: var(--social-links);    
 }
 
-.clients .box-1 {
+/* .clients .box-1 {
     padding: 22px 64px 21px 63px;
 }
 
@@ -511,17 +518,14 @@ img {
 
 .clients .box-6 {
     padding: 22px 37px 24px 37px;
-}
+} */
 
 .clients .box:hover {
-    border: 1px solid var(--brand-color);
+    border-color: var(--brand-color);
     color: var(--brand-color);
 }
 
 .client-icon {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     fill: currentColor;
 }
 
@@ -610,9 +614,11 @@ img {
 .footer-secondary {
     padding-top: 12px;
     margin-left: 70px;
+    width: 206px;
 }
 
 .footer-title {
+    display: block;
     margin-bottom: 20px;
 
     font-weight: 700;
@@ -693,10 +699,6 @@ img {
     margin-bottom: var(--cards-gap);
 }
 
-.projects .item:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
 .projects .txt {
     padding: 20px 24px;
     border: 1px solid var(--projects-border);
@@ -704,9 +706,13 @@ img {
 }
 
 .projects-link {
+    display: block;
     text-decoration: none;
 }
 
+.projects-link:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 .projects-title {
     margin: 0;
