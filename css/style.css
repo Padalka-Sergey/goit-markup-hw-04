@@ -439,7 +439,7 @@ img {
 .footer .icons:focus {
     background-color: var(--brand-color);
     border-radius: 50%;
-    fill: var(--text-white);
+    color: var(--text-white);
 }
 
 .team .social-icon,
@@ -447,6 +447,7 @@ img {
     display: block;
     width: 20px;
     height: 20px;
+    fill: currentColor;
 }
 /* END */
 /* SOCIAL LINKS COMMON*/
@@ -458,7 +459,11 @@ img {
 }
 
 .team .icons {
-    fill: var(--social-links);
+    color: var(--social-links);
+}
+
+.footer .icons {
+    color: var(--text-white);
 }
 
 
@@ -467,66 +472,69 @@ img {
 
 .clients-items {
     display: flex;
-    flex-wrap: wrap;
-    margin-right: calc(-1 *var(--cards-gap));
-    margin-bottom: calc(-1 *var(--cards-gap));
+    gap: 30px;
 }
+
 
 .clients-item {
-    --qty-cards: 6;
-    flex-basis: calc(100%/var(--qty-cards) - var(--cards-gap));
-    margin-right: var(--cards-gap);
-    margin-bottom: var(--cards-gap);
+    height: 92px;
+    flex-basis: 170px;
 }
 
-.clients .box {
-    height: 92px;
+
+.clients-link {
     display: flex;
-    
     justify-content: center;
     align-items: center;
-    /* Добавил сверху */
+    height: 100%;
+    color: var(--social-links);
     border: 1px solid var(--social-links);
     border-radius: 4px;
-    color: var(--social-links);    
 }
 
-
-.clients .box:hover {
-    border-color: var(--brand-color);
+.clients-link:hover,
+.clients-link:focus {
     color: var(--brand-color);
+    border-color: var(--brand-color);
 }
+
 
 .client-icon {
     fill: currentColor;
 }
 
 .client-1 {
+    display: block;
     width: 41px;
     height: 47px;
 }
 
 .client-2 {
+    display: block;
     width: 40px;
     height: 52px;
 }
 
 .client-3 {
+    display: block;
     width: 43px;
     height: 41px;
 }
 
 .client-4 {
+    display: block;
     width: 84px;
     height: 41px;
 }
 
 .client-5 {
+    display: block;
     width: 63px;
     height: 45px;
 }
 
 .client-6 {
+    display: block;
     width: 94px;
     height: 44px;
 }
